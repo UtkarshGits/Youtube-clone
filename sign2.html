@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Go.png" />
+    <title>Sign in</title>
+</head>
+<style>
+    .te {
+        background-color: white;
+        height: 450px;
+        width: 72%;
+        border-radius: 25px;
+        margin-left: 190px;
+        margin-top: 90px;
+
+    }
+
+    .gap {
+        margin-top: 30px;
+    }
+
+    .im {
+        margin-left: 225px;
+        margin-top: -410px;
+    }
+
+    .si {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-left: 225px;
+
+    }
+
+    .us {
+        margin-left: 225px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tx {
+        height: 50px;
+        width: 360px;
+        border-radius: 6px;
+        border: 1px solid rgb(82, 81, 81);
+        padding-left: 15px;
+        margin-top: 125px;
+        margin-left: 500px;
+        background-color: white;
+    }
+
+    .fe {
+        color: blue;
+        margin-left: 501px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+    .nt {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 501px;
+        margin-top: 35px;
+    }
+
+    .tn {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 501px;
+        color: blue;
+        font-weight: 500;
+    }
+
+    .gap {
+        font-weight:650;
+        margin-top: 30px;
+        margin-left: 650px;
+        color: blue;
+        background-color: white;
+        border: 0px solid transparent;
+    }
+
+    .gap-1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 650;
+        width: 80px;
+        color: white;
+        border: 1px solid transparent;
+        background-color: rgb(20, 107, 236);
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: -40px;
+        margin-left: 800px;
+        border-radius: 20px;
+    }
+
+    .gpt {
+        margin-top: -20px;
+    }
+</style>
+
+<body style="background-color:  #edf4fa;">
+
+    <div class="te">
+
+        <input class="tx" type="password" placeholder="Enter password" id="pass" />
+        <p class="fe">Forgot Password?</p>
+        <p class="nt">Not your computer? Use Guest mode to sign in privately.</p>
+        <p class="tn">Learn more about using Guest mode</p>
+        <button class="gap">Create an account</button>
+        <div class="gpt">
+            <button class="gap-1" onclick="next()">Next</button>
+        </div>
+    </div>
+    <div class="im">
+        <img src="Go.png" height="50px" margin-top="30px" />
+    </div>
+    <div>
+        <h1 class="si">Sign in</h1>
+        <p class="us">Use your Google Account</p>
+    </div>
+    <script>
+        function next() {
+            let password = document.getElementById('pass').value;
+            if (password == '') {
+                alert('please enter Password');
+                return;
+            }
+            if (password == 'Utkarsh') {
+                window.location.href = 'Youtube2.html';
+            }
+            else {
+                alert('invalid password');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
